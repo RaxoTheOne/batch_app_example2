@@ -1,18 +1,52 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const AppAkademie());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class AppAkademie extends StatelessWidget {
+  const AppAkademie({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
+    return MaterialApp(
+      title: 'Steckbrief App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const MyHomePage(title: 'Steckbrief Lama'),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    const headingStyle = TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(10),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Image.network('URL_TO_LLAMA_IMAGE'),
+            const SizedBox(height: 20),
+            const Text('Name', style: headingStyle),
+            const Text('Diana das Lama'),
+            const SizedBox(height: 20),
+            const Text('Gewicht', style: headingStyle),
+            const Text('120 kg'),
+            const SizedBox(height: 20),
+            const Text('Größe', style: headingStyle),
+            const Text('1,80 m'),
+          ],
         ),
       ),
     );
