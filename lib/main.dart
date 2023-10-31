@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'styles.dart'
+import 'package:batch_app_example2/styles.dart';
 
 void main() {
   runApp(const AppAkademie());
