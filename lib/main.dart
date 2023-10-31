@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:batch_app_example2/styles.dart';
+import 'styles.dart'; // Importieren Sie die styles.dart-Datei
 
 void main() {
   runApp(const AppAkademie());
@@ -27,7 +27,6 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const headingStyle = TextStyle(fontSize: 24, fontWeight: FontWeight.bold);
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
@@ -40,13 +39,13 @@ class MyHomePage extends StatelessWidget {
           children: <Widget>[
             Image.network('https://www.kindernetz.de/wissen/tierlexikon/1653497692338%2Csteckbrief-lama-102~_v-7x2@2dL_-bc89d1b8c81b47b66f836795f7bde50a08841ecb.jpg'),
             const SizedBox(height: 20),
-            const Text('Name', style: headingStyle),
+            const Text('Name', style: headingStyle), // Verwenden Sie den Textstil aus styles.dart
             const Text('Diana das Lama'),
             const SizedBox(height: 20),
-            const Text('Gewicht', style: headingStyle),
+            const Text('Gewicht', style: headingStyle), // Verwenden Sie den Textstil aus styles.dart
             const Text('120 kg'),
             const SizedBox(height: 20),
-            const Text('Größe', style: headingStyle),
+            const Text('Größe', style: headingStyle), // Verwenden Sie den Textstil aus styles.dart
             const Text('1,80 m'),
           ],
         ),
