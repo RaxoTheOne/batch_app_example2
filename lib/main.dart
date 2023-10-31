@@ -26,7 +26,7 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const headingStyle = TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
+    const headingStyle = TextStyle(fontSize: 24, fontWeight: FontWeight.bold);
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
