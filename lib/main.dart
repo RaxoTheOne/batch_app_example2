@@ -36,7 +36,7 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Image.network('URL_TO_LLAMA_IMAGE'),
+            Image.network('https://www.kindernetz.de/wissen/tierlexikon/1653497692338%2Csteckbrief-lama-102~_v-7x2@2dL_-bc89d1b8c81b47b66f836795f7bde50a08841ecb.jpg'),
             const SizedBox(height: 20),
             const Text('Name', style: headingStyle),
             const Text('Diana das Lama'),
