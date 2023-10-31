@@ -34,7 +34,7 @@ class MyHomePage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(10),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Image.network('https://www.kindernetz.de/wissen/tierlexikon/1653497692338%2Csteckbrief-lama-102~_v-7x2@2dL_-bc89d1b8c81b47b66f836795f7bde50a08841ecb.jpg'),
             const SizedBox(height: 20),
